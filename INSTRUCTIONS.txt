@@ -16,3 +16,31 @@ Either run the batch files 1-5 individually, or just A and B.
 
 A combines 1 & 2
 B combines 3, 4, and 5
+
+Instructions for adding the PEM file to the Windows Store and to Firefox are included in the batch file(s) and printed to screen during the routine, but for reference, they are:
+
+In Windows:
+
+* Run Winkey-^>MMC
+* File -^>  Add/Remove Snap-in... (Ctrl^+M)
+* Under "Available snap-ins", click "Certificates"
+* Click [Add] button; a modal dialog window will appear
+* Select "Computer Account" radio button and click [Next] button
+* Local Computer should be selected in next window; click [Finish] button
+* Click [OK] back on "Add or Remove Snap-ins" modal window
+* Expand "Certificates" under "Console Root" in left pane
+* Expand "Trusted Root Certificates"
+* Right-click "Certificates" in folder below
+* Select "All Tasks" -^> Import...
+* Click [Next] and then browse to select the PEM file created by this batch file routine
+* In following prompts, place PEM certificate in Trusted Root Certification Authorities Store
+
+In Firefox:
+
+* Go to "about:preferences" in URL
+* Search for "certificates"
+* Click on [View Certificates]
+* Click on "Authorities" tab
+* Click on "Imports"
+* Import the PEM file, checking all boxes to trust the certificate
+* Click [OK] and you're done
