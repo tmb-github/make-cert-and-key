@@ -15,9 +15,13 @@ Edit the settings in setEnvironmentVariables.batch
 
 Either run the batch files 1-5 individually, or just A and B.
 
-A combines 1 & 2
-B combines 3, 4, and 5
+* A combines 1 & 2
+* B combines 3, 4, and 5
 
-## NOTE
+## NB:
 
 This routine was written with a XAMPP/Apache localhost server in mind, so there are instructions specific to editing that configuration. But the files generated may be used with any localhost server (e.g., Next.JS).
+
+## NBB:
+
+Instructions for installing the PEM file in the Windows store and in Firefox are typed to the screen by the batch file(s), and they are reproduced in INSTRUCTIONS.TXT as well.
